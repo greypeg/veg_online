@@ -7,4 +7,3 @@ export const appUserRouter = router({
     return ctx.prisma.user.findMany();
   }),
 });
-
