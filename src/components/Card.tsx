@@ -23,7 +23,7 @@ export type TechnologyCardProps = {
           target="_blank"
           rel="noreferrer"
         >
-          Documentation
+          Documentation Hi
         </a>
       </section>
     );
