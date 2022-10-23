@@ -2,8 +2,9 @@ import { router, publicProcedure } from "../trpc";
 import { z } from "zod";
 import { contextProps } from "@trpc/react/dist/internals/context";
 
-export const userRouter = router({
+export const appUserRouter = router({
   getAll: publicProcedure.query(({ ctx }) => {
-    return ctx.prisma.example.findMany();
+    return ctx.prisma.user.findMany();
   }),
 });
+

@@ -3,8 +3,7 @@ import TechnologyCard from "../components/Card";
 import { trpc } from "../utils/trpc";
 
 const Pricing = () => {
-  const { data, isLoading } = trpc.example.getAll.useQuery();
-
+  const { data, isLoading } = trpc.example.hello.useQuery();
   if (isLoading) return "Loading...";
   
   return (
